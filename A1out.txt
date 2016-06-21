@@ -1,0 +1,12 @@
+0	able,991
+0	Jan-01 able,5
+9	about,11
+14	Feb-02 about,3
+18	burger,15
+28	actor,22
+29	Mar-03 about,8
+44	Apr-04 able,13
+59	Feb-22 actor,3
+74	Feb-23 burger,5
+90	Mar-08 burger,2
+106	Dec-15 able,100

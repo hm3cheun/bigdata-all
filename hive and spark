@@ -1,0 +1,12 @@
+1. order.filter(order["order_status"]=="SUSPECTED_FRAUD").count()
+
+
+2. import pyspark.sql.functions as func
+order_item.groupBy("order_item_order_id").agg(func.sum("order_item_subtotal").alias("s")).orderBy(desc("s")).show()
+
+3.join_data.filter(join_data["order_status"]=="COMPLETE").agg({"order_item_product_price":"mean"}).show()
+
+4.join_data.filter(join_data["order_status"]=="COMPLETE").groupby("order_customer_id").agg(func.sum("order_item_subtotal").alias("s")).orderBy(desc("s")).show()
+
+5.join_data.filter(join_data["order_status"]!="COMPLETE").groupby("order_id").agg(func.sum("order_item_subtotal").alias("s")).orderBy(desc("s")).show()
+
